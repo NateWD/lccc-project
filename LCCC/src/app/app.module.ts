@@ -29,6 +29,11 @@ import { UserAccessComponent } from './account/management/user-access/user-acces
 import { UserCommComponent } from './account/user_comm/chat-communication.component';
 import { ChatBotComponent } from './account/chat-bot/chat-bot.component';
 import { AboutUserComponent } from './account/about-user/about-user.component';
+import { AboutComponent } from './about/about.component';
+import { FooterComponent } from './globals/footer/footer.component';
+import { SignUpComponent } from './account/sign-up/sign-up.component';
+import { SignInComponent } from './account/sign-in/sign-in.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -59,9 +64,14 @@ import { AboutUserComponent } from './account/about-user/about-user.component';
     UserCommComponent,
     ChatBotComponent,
     AboutUserComponent,
+    AboutComponent,
+    FooterComponent,
+    SignUpComponent,
+    SignInComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
